@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4A90E2">
+  <title>学習トラッカー</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <main id="app">
+    <section id="dashboard" class="page"></section>
+    <section id="record"    class="page"></section>
+    <section id="history"   class="page"></section>
+    <section id="subjects"  class="page"></section>
+    <section id="settings"  class="page"></section>
+  </main>
+
+  <nav id="bottom-nav">
+    <a href="#dashboard" class="nav-item" data-page="dashboard">
+      <span class="nav-label">ホーム</span>
+    </a>
+    <a href="#record" class="nav-item" data-page="record">
+      <span class="nav-label">記録</span>
+    </a>
+    <a href="#history" class="nav-item" data-page="history">
+      <span class="nav-label">履歴</span>
+    </a>
+    <a href="#subjects" class="nav-item" data-page="subjects">
+      <span class="nav-label">科目</span>
+    </a>
+    <a href="#settings" class="nav-item" data-page="settings">
+      <span class="nav-label">設定</span>
+    </a>
+  </nav>
+
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
