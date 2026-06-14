@@ -96,7 +96,7 @@
 
 ## フェーズ 8：PWA 対応
 
-- [ ] **T-080** `sw.js` を実装する（Cache First 戦略・precache リスト）
+- [x] **T-080** `sw.js` を実装する（Cache First 戦略・precache リスト）
 - [ ] **T-081** オフライン動作を DevTools で確認する
 - [ ] **T-082** ホーム画面への追加（インストールプロンプト）を実装する
 - [ ] **T-083** `manifest.json` の動作確認（Lighthouse で PWA スコア確認）
