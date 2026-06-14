@@ -649,6 +649,53 @@ button:disabled {
   color: #DC2626;
 }
 
+/* ── インストールバナー ── */
+.install-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  z-index: 9000;
+}
+
+.install-banner-text {
+  font-size: var(--font-size-sm);
+  flex: 1;
+}
+
+.install-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.install-banner-btn {
+  width: auto;
+  padding: var(--space-xs) var(--space-md);
+  background: #fff;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.install-banner-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: var(--space-xs);
+}
+
 /* =============================================
    6. ユーティリティ
    ============================================= */
