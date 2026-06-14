@@ -565,6 +565,90 @@ button:disabled {
   padding: var(--space-xl) 0;
 }
 
+/* ── 設定画面 ── */
+.settings-section {
+  margin-bottom: var(--space-xl);
+}
+
+.settings-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.settings-storage-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+}
+
+.settings-storage-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.settings-storage-value {
+  font-weight: 600;
+}
+
+.settings-bar {
+  height: 6px;
+  background: var(--color-border);
+  margin: 0 var(--space-md) var(--space-md);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.settings-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.settings-action-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings-action-item:last-child {
+  border-bottom: none;
+}
+
+.settings-action-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.settings-action-title {
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.settings-action-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.settings-message {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  min-height: 1.2em;
+}
+
+.settings-message-success {
+  color: #16A34A;
+}
+
+.settings-message-error {
+  color: #DC2626;
+}
+
 /* =============================================
    6. ユーティリティ
    ============================================= */
