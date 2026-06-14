@@ -114,7 +114,7 @@
 
 ## フェーズ 10：デプロイ
 
-- [ ] **T-100** GitHub リポジトリを作成してプッシュする
+- [x] **T-100** GitHub リポジトリを作成してプッシュする
 - [ ] **T-101** GitHub Pages を有効化する（Settings > Pages）
 - [ ] **T-102** 本番 URL で動作確認する（特に SW・オフライン）
 - [ ] **T-103** Lighthouse でスコア確認（PWA・Performance・Accessibility）
