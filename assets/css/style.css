@@ -44,6 +44,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 a {
@@ -135,6 +136,7 @@ img {
   display: block;
   width: 100%;
   padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   font-size: var(--font-size-md);
@@ -158,6 +160,7 @@ img {
   display: block;
   width: 100%;
   padding: var(--space-sm) var(--space-lg);
+  min-height: 44px;
   background: var(--color-primary);
   color: #fff;
   border: none;
@@ -173,8 +176,11 @@ img {
 }
 
 .btn-secondary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--space-xs) var(--space-md);
+  min-height: 44px;
   background: transparent;
   color: var(--color-text-muted);
   border: 1px solid var(--color-border);
@@ -188,8 +194,11 @@ img {
 }
 
 .btn-danger {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--space-xs) var(--space-md);
+  min-height: 44px;
   background: transparent;
   color: #DC2626;
   border: 1px solid #FCA5A5;
@@ -231,6 +240,7 @@ button:disabled {
   display: block;
   width: 100%;
   padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   font-size: var(--font-size-md);
@@ -354,6 +364,7 @@ button:disabled {
   display: block;
   width: 100%;
   padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   font-size: var(--font-size-md);
@@ -611,7 +622,8 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-md);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
   padding: var(--space-md);
   border-bottom: 1px solid var(--color-border);
 }
