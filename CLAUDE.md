@@ -198,11 +198,16 @@ PWA 関連タスク（T-080〜T-083）は追加で:
 - 実装完了後に push が必要な場合は「push してよいですか？」と確認を取る
 - ユーザーが自分で push する場合は、実行すべきコマンドを提示するにとどめる
 
-以下の**読み取り専用 Git コマンド**は確認不要で随時実行してよい:
+**作業ディレクトリについて:**
+- `cd "d:/20_ClaudeCode/study-tracker"` は不要
+- ワークスペースルート（`d:/20_ClaudeCode/study-tracker/`）を基準に Git コマンドを実行すること
+
+以下の**読み取り専用 Git コマンド**は確認不要で随時実行してよい（`&&` で組み合わせた場合も含む）:
 - `git status` — 変更状態の確認
-- `git log` — コミット履歴の確認
-- `git diff` — 差分の確認
-- `git log --oneline origin/main` — Push 後の確認
+- `git log` / `git log --oneline` — コミット履歴の確認
+- `git diff` / `git diff --stat` — 差分の確認
+- `git log --oneline origin/main` — Push 後のリモートとの比較
+- 上記の組み合わせ例: `git status && git log --oneline && git log --oneline origin/main`
 
 ---
 
