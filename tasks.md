@@ -16,7 +16,7 @@
 
 ## フェーズ 1：データ層
 
-- [ ] **T-010** `storage.js` を実装する
+- [x] **T-010** `storage.js` を実装する
   - getSubjects / getSessions / getSettings / getTimerState
   - saveSubject / deleteSubject
   - saveSession / deleteSession
