@@ -46,15 +46,17 @@ function buildPage(todayMin, weekMin, hasSessions, subjectData) {
   </div>
 </div>
 
-<section class="dashboard-chart-section">
-  <h2 class="section-heading">今週の学習時間</h2>
-  ${weekChartHtml}
-</section>
+<div class="dashboard-charts">
+  <section class="dashboard-chart-section">
+    <h2 class="section-heading">今週の学習時間</h2>
+    ${weekChartHtml}
+  </section>
 
-<section class="dashboard-chart-section">
-  <h2 class="section-heading">科目別割合</h2>
-  ${pieChartHtml}
-</section>`;
+  <section class="dashboard-chart-section">
+    <h2 class="section-heading">科目別割合</h2>
+    ${pieChartHtml}
+  </section>
+</div>`;
 }
 
 function calcTodayMinutes(sessions) {

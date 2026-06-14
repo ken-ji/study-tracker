@@ -724,5 +724,19 @@ button:disabled {
 
 /* タブレット以上 */
 @media (min-width: 768px) {
-  /* TODO(phase2): サイドナビへの切り替えなど */
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .dashboard-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+
+  .dashboard-canvas {
+    max-height: 280px;
+  }
 }
