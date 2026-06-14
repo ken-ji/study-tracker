@@ -115,12 +115,214 @@ img {
 }
 
 /* =============================================
-   4. 各ページ共通コンポーネント（T-030〜で追加）
+   4. 各ページ共通コンポーネント
    ============================================= */
 
+.page-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+}
+
+.section-heading {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  color: var(--color-text-muted);
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.form-error {
+  font-size: var(--font-size-sm);
+  color: #DC2626;
+  min-height: 1.2em;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary:active {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.btn-secondary:active {
+  background: var(--color-border);
+}
+
+.btn-danger {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: transparent;
+  color: #DC2626;
+  border: 1px solid #FCA5A5;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.btn-danger:active {
+  background: #FEE2E2;
+}
+
 /* =============================================
-   5. ページ固有スタイル（T-030〜で追加）
+   5. ページ固有スタイル
    ============================================= */
+
+/* ── 科目管理画面 ── */
+.subjects-add-section,
+.subjects-list-section {
+  margin-bottom: var(--space-xl);
+}
+
+.subjects-add-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.subject-name-input {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.subject-name-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.color-picker {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.color-swatch.selected {
+  box-shadow: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-text);
+}
+
+.subjects-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.subject-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.subject-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subject-name {
+  flex: 1;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.subject-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.subject-edit-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.edit-btn-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.edit-btn-row .btn-primary {
+  flex: 1;
+}
+
+.edit-btn-row .btn-secondary {
+  flex: 1;
+  text-align: center;
+}
+
+.subjects-empty {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
 
 /* =============================================
    6. ユーティリティ
