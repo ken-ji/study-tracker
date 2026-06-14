@@ -50,7 +50,16 @@ function buildEditForm(subject) {
 
 function buildPage(subjects) {
   const listHtml = subjects.length === 0
-    ? `<p class="subjects-empty">科目がまだ登録されていません</p>`
+    ? `<div class="empty-state">
+        <div class="empty-state-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+          </svg>
+        </div>
+        <p class="empty-state-title">科目がまだありません</p>
+        <p class="empty-state-desc">上のフォームから科目を追加してください</p>
+      </div>`
     : subjects.map(buildSubjectCard).join('');
 
   return `<h1 class="page-title">科目管理</h1>

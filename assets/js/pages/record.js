@@ -25,9 +25,16 @@ export function render() {
 
 function buildEmpty() {
   return `<h1 class="page-title">記録する</h1>
-<div class="record-empty">
-  <p class="record-empty-text">科目が登録されていません</p>
-  <a href="#subjects" class="btn-primary record-empty-link">科目を登録する</a>
+<div class="empty-state">
+  <div class="empty-state-icon">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </svg>
+  </div>
+  <p class="empty-state-title">科目が登録されていません</p>
+  <p class="empty-state-desc">まず科目を追加してから学習を記録しましょう</p>
+  <a href="#subjects" class="btn-primary empty-state-action">科目を追加する</a>
 </div>`;
 }
 

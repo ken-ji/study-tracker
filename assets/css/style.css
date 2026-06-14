@@ -709,7 +709,42 @@ button:disabled {
 }
 
 /* =============================================
-   6. ローディング・トースト
+   6. エンプティステート
+   ============================================= */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  gap: var(--space-xs);
+}
+
+.empty-state-icon {
+  color: var(--color-border);
+  margin-bottom: var(--space-sm);
+}
+
+.empty-state-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.empty-state-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.empty-state-action {
+  display: inline-flex;
+  width: auto;
+  margin-top: var(--space-sm);
+}
+
+/* =============================================
+   7. ローディング・トースト
    ============================================= */
 
 #loading {
@@ -761,7 +796,7 @@ button:disabled {
 .toast-error   { background: #DC2626; }
 
 /* =============================================
-   7. ユーティリティ
+   8. ユーティリティ
    ============================================= */
 .sr-only {
   position: absolute;

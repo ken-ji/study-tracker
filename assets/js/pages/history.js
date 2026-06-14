@@ -15,7 +15,21 @@ export function render() {
 
 function buildPage(sessions, subjectMap) {
   const listHtml = sessions.length === 0
-    ? `<p class="history-empty">記録がありません</p>`
+    ? `<div class="empty-state">
+        <div class="empty-state-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </div>
+        <p class="empty-state-title">記録がありません</p>
+        <p class="empty-state-desc">記録画面からタイマーや手動入力で学習を記録しましょう</p>
+        <a href="#record" class="btn-primary empty-state-action">記録する</a>
+      </div>`
     : sessions.map(s => buildCard(s, subjectMap)).join('');
 
   return `<h1 class="page-title">履歴</h1>

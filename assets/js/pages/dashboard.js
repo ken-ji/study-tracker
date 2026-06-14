@@ -26,12 +26,29 @@ export function render() {
 function buildPage(todayMin, weekMin, hasSessions, subjectData) {
   const weekChartHtml = hasSessions
     ? `<canvas id="chart-weekly" class="dashboard-canvas"></canvas>`
-    : `<p class="dashboard-empty">まだ記録がありません</p>`;
+    : `<div class="empty-state">
+        <div class="empty-state-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+        </div>
+        <p class="empty-state-title">記録がありません</p>
+        <p class="empty-state-desc">学習を記録するとグラフが表示されます</p>
+      </div>`;
 
   const hasSubjectData = subjectData && subjectData.values.length > 0;
   const pieChartHtml = hasSubjectData
     ? `<canvas id="chart-subjects" class="dashboard-canvas"></canvas>`
-    : `<p class="dashboard-empty">まだ記録がありません</p>`;
+    : `<div class="empty-state">
+        <div class="empty-state-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.21 15.89A10 10 0 118 2.83"/><path d="M22 12A10 10 0 0012 2v10z"/>
+          </svg>
+        </div>
+        <p class="empty-state-title">記録がありません</p>
+        <p class="empty-state-desc">学習を記録するとグラフが表示されます</p>
+      </div>`;
 
   return `<h1 class="page-title">ホーム</h1>
 
