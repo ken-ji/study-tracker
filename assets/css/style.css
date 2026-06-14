@@ -202,6 +202,11 @@ img {
   background: #FEE2E2;
 }
 
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* =============================================
    5. ページ固有スタイル
    ============================================= */
@@ -322,6 +327,115 @@ img {
   color: var(--color-text-muted);
   text-align: center;
   padding: var(--space-xl) 0;
+}
+
+/* ── 記録画面 ── */
+.record-empty {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.record-empty-text {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.record-empty-link {
+  display: inline-block;
+  width: auto;
+}
+
+.record-timer-section,
+.record-manual-section {
+  margin-bottom: var(--space-xl);
+}
+
+.record-select {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.record-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.record-select:disabled {
+  opacity: 0.6;
+  background: var(--color-bg);
+}
+
+.record-timer-display {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.record-timer-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.btn-timer-main {
+  flex: 1;
+  width: auto;
+}
+
+.btn-timer-save {
+  margin-top: var(--space-xs);
+}
+
+.record-manual-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.record-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.record-label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.record-textarea {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background: var(--color-surface);
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.record-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
 }
 
 /* =============================================
