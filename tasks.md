@@ -117,17 +117,17 @@
 - [x] **T-100** GitHub リポジトリを作成してプッシュする
 - [x] **T-101** GitHub Pages を有効化する（Settings > Pages）
 - [x] **T-102** 本番 URL で動作確認する（特に SW・オフライン）
-- [ ] **T-103** Lighthouse でスコア確認（PWA・Performance・Accessibility）
+- [x] **T-103** Lighthouse でスコア確認（PWA・Performance・Accessibility）
 
 ---
 
 ## 完了基準（MVP リリース条件）
 
-- [ ] 5画面すべてが動作する
-- [ ] タイマーでセッションを記録できる
-- [ ] 手動入力でセッションを記録できる
-- [ ] ダッシュボードにグラフが表示される
-- [ ] オフラインで全機能が動作する（DevTools > Network: Offline で確認）
-- [ ] スマホ（375px）でレイアウトが崩れない
-- [ ] ホーム画面に追加できる
-- [ ] Lighthouse PWA スコア: 緑（基準クリア）
+- [x] 5画面すべてが動作する
+- [x] タイマーでセッションを記録できる
+- [x] 手動入力でセッションを記録できる
+- [x] ダッシュボードにグラフが表示される
+- [x] オフラインで全機能が動作する（DevTools > Network: Offline で確認）
+- [x] スマホ（375px）でレイアウトが崩れない
+- [x] ホーム画面に追加できる
+- [x] Lighthouse PWA スコア: 緑（基準クリア）
