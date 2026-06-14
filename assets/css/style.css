@@ -103,6 +103,17 @@ img {
   font-weight: 600;
 }
 
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
 /* =============================================
    4. 各ページ共通コンポーネント（T-030〜で追加）
    ============================================= */
