@@ -212,6 +212,10 @@ PWA 関連タスク（T-080〜T-083）は追加で:
   - `git -C "d:/20_ClaudeCode/study-tracker" status && git -C "d:/20_ClaudeCode/study-tracker" log --oneline`
   - `git -C "d:/20_ClaudeCode/study-tracker" log --oneline origin/main`
 
+**Push 後の確認方法:**
+`git -C "d:/20_ClaudeCode/study-tracker" log --oneline origin/main -3` のみで行う。
+curl・Python・GitHub API などを使った確認は不要。
+
 ---
 
 ## デプロイ手順（要約）
