@@ -20,6 +20,9 @@ async function navigate(pageId) {
   } catch (e) {
     console.error(`[router] render error on ${target}:`, e);
   }
+
+  const loading = document.getElementById('loading');
+  if (loading) loading.remove();
 }
 
 function onHashChange() {

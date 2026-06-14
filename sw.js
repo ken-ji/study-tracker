@@ -11,6 +11,7 @@ const PRECACHE_URLS = [
   './assets/js/storage.js',
   './assets/js/timer.js',
   './assets/js/charts.js',
+  './assets/js/toast.js',
   './assets/js/pages/dashboard.js',
   './assets/js/pages/record.js',
   './assets/js/pages/history.js',

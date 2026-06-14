@@ -1,5 +1,6 @@
 import { getSubjects, saveSession } from '../storage.js';
 import * as timer from '../timer.js';
+import { showToast } from '../toast.js';
 
 let tickId = null;
 
@@ -150,6 +151,7 @@ function attachEvents(section) {
       }
       timer.reset();
       render();
+      showToast('記録を保存しました');
     });
   }
 
@@ -196,6 +198,7 @@ function attachEvents(section) {
       return;
     }
     render();
+    showToast('記録を保存しました');
   });
 }
 
