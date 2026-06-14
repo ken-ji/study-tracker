@@ -22,13 +22,13 @@
   - saveSession / deleteSession
   - saveSettings / saveTimerState
   - exportAll / importAll / clearAll / getStorageSize
-- [ ] **T-011** `storage.js` の動作を `console` で手動確認する
+- [x] **T-011** `storage.js` の動作を `console` で手動確認する
 
 ---
 
 ## フェーズ 2：ルーティング
 
-- [ ] **T-020** `router.js` を実装する（ハッシュ変化の監視・ページ切り替え）
+- [x] **T-020** `router.js` を実装する（ハッシュ変化の監視・ページ切り替え）
 - [ ] **T-021** `app.js` を実装する（SW 登録・router 初期化・storage 初期化）
 - [ ] **T-022** ボトムナビゲーションの表示とアクティブ状態切り替えを実装する
 
