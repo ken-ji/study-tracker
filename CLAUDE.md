@@ -199,15 +199,18 @@ PWA 関連タスク（T-080〜T-083）は追加で:
 - ユーザーが自分で push する場合は、実行すべきコマンドを提示するにとどめる
 
 **作業ディレクトリについて:**
+- ワークスペースルートは `d:\20_ClaudeCode`（シェルの起動ディレクトリ）
 - `cd "d:/20_ClaudeCode/study-tracker"` は不要
-- ワークスペースルート（`d:/20_ClaudeCode/study-tracker/`）を基準に Git コマンドを実行すること
+- リポジトリ操作は `git -C "d:/20_ClaudeCode/study-tracker" <コマンド>` で行う
 
-以下の**読み取り専用 Git コマンド**は確認不要で随時実行してよい（`&&` で組み合わせた場合も含む）:
+以下の**読み取り専用 Git コマンド**は確認不要で随時実行してよい（`&&` で組み合わせた場合も、`-C "d:/20_ClaudeCode/study-tracker"` と組み合わせた場合も含む）:
 - `git status` — 変更状態の確認
 - `git log` / `git log --oneline` — コミット履歴の確認
 - `git diff` / `git diff --stat` — 差分の確認
 - `git log --oneline origin/main` — Push 後のリモートとの比較
-- 上記の組み合わせ例: `git status && git log --oneline && git log --oneline origin/main`
+- 組み合わせ例（確認不要）:
+  - `git -C "d:/20_ClaudeCode/study-tracker" status && git -C "d:/20_ClaudeCode/study-tracker" log --oneline`
+  - `git -C "d:/20_ClaudeCode/study-tracker" log --oneline origin/main`
 
 ---
 
